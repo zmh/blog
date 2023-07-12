@@ -7,6 +7,14 @@
 	"items": [
 		
 			{
+				"id": "http://zmh.micro.blog/2023/07/12/mike-krieger-ill.html",
+				
+				"content_html": "<blockquote>\n<p>Mike Krieger: I’ll share a funny anecdote about the Explore experiment. Facebook has all these internal A/B testing tooling and we hooked into it and we ran our first machine learning on the Explore experiment and we filed a bug report and I’m like, “Hey, your tool isn’t working, that’s not reporting results here.” And they said, “No, the results are just so strong that they’re literally off the charts. The little bars that show it literally is over 200%, you just should ship this yesterday.” The data looked really good.</p>\n</blockquote>\n",
+				"content_text": "> Mike Krieger: I’ll share a funny anecdote about the Explore experiment. Facebook has all these internal A/B testing tooling and we hooked into it and we ran our first machine learning on the Explore experiment and we filed a bug report and I’m like, “Hey, your tool isn’t working, that’s not reporting results here.” And they said, “No, the results are just so strong that they’re literally off the charts. The little bars that show it literally is over 200%, you just should ship this yesterday.” The data looked really good.\n",
+				"date_published": "2023-07-12T00:11:21-04:00",
+				"url": "https://blog.zmh.org/2023/07/12/mike-krieger-ill.html"
+			},
+			{
 				"id": "http://zmh.micro.blog/2023/06/02/bad-news-i.html",
 				
 				"content_html": "<p>📷 Bad news: I accidentally left my bag on a train at Grand Central Station today.</p>\n<p>Good news: While waiting at the Lost &amp; Found, I got to enjoy these art deco-style MTA posters from George Pataki’s time as governor. (And shortly thereafter, got my bag back.)</p>\n<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>\n",
@@ -35,7 +43,7 @@
 				"id": "http://zmh.micro.blog/2023/05/13/gorgeous-reimagining-of.html",
 				
 				"content_html": "<p>Gorgeous reimagining of the tape recorder from Teenage Engineering, complete with a spinning tape reel, &ldquo;off the record&rdquo; mode, and voice memos. I love single purpose devices — have been thinking of getting an old iPod, and this isn&rsquo;t helping.</p>\n<p><a href=\"https://teenage.engineering/products/tp-7\">teenage.engineering/products/&hellip;</a></p>\n<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>\n",
-				"content_text": "Gorgeous reimagining of the tape recorder from Teenage Engineering, complete with a spinning tape reel, \"off the record\" mode, and voice memos. I love single purpose devices — have been thinking of getting an old iPod, and this isn't helping.\n\n[teenage.engineering/products/...](https://teenage.engineering/products/tp-7)\n\n<img src=\"uploads/2023/939e2a0c7f.png\" width=\"600\" height=\"562\" alt=\"\"><img src=\"uploads/2023/db12b8a4b7.png\" width=\"600\" height=\"392\" alt=\"\"><img src=\"uploads/2023/73d0ea4c22.png\" width=\"600\" height=\"375\" alt=\"\"><img src=\"uploads/2023/5460913a37.png\" width=\"600\" height=\"393\" alt=\"\">\n",
+				"content_text": "Gorgeous reimagining of the tape recorder from Teenage Engineering, complete with a spinning tape reel, \"off the record\" mode, and voice memos. I love single purpose devices — have been thinking of getting an old iPod, and this isn't helping.\n\n[teenage.engineering/products/...](https://teenage.engineering/products/tp-7)\n\n<img src=\"https://cdn.uploads.micro.blog/91876/2023/939e2a0c7f.png\" width=\"600\" height=\"562\" alt=\"\"><img src=\"https://cdn.uploads.micro.blog/91876/2023/db12b8a4b7.png\" width=\"600\" height=\"392\" alt=\"\"><img src=\"https://cdn.uploads.micro.blog/91876/2023/73d0ea4c22.png\" width=\"600\" height=\"375\" alt=\"\"><img src=\"https://cdn.uploads.micro.blog/91876/2023/5460913a37.png\" width=\"600\" height=\"393\" alt=\"\">\n",
 				"date_published": "2023-05-13T06:25:16-04:00",
 				"url": "https://blog.zmh.org/2023/05/13/gorgeous-reimagining-of.html"
 			},
@@ -43,7 +51,7 @@
 				"id": "http://zmh.micro.blog/2023/02/10/just-discovered-poolsuitefms.html",
 				
 				"content_html": "<p>📷 Just discovered Poolsuite.fm&rsquo;s Are.na board — such great vintage and design inspiration:</p>\n<p><a href=\"https://www.are.na/share/aRCNPLv\">www.are.na/share/aRC&hellip;</a></p>\n<p>Some favorites:</p>\n<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>",
-				"content_text": "📷 Just discovered Poolsuite.fm's Are.na board — such great vintage and design inspiration: \n<!--more-->\n[www.are.na/share/aRC...](https://www.are.na/share/aRCNPLv)\n\nSome favorites:\n\n\n<img src=\"uploads/2023/7d33ade16f.jpg\" width=\"600\" height=\"478\" alt=\"\"><img src=\"uploads/2023/54407a3df1.jpg\" width=\"600\" height=\"400\" alt=\"\"><img src=\"uploads/2023/3e24c58794.jpg\" width=\"600\" height=\"400\" alt=\"\"><img src=\"uploads/2023/544c46ed9e.jpg\" width=\"600\" height=\"399\" alt=\"\">\n",
+				"content_text": "📷 Just discovered Poolsuite.fm's Are.na board — such great vintage and design inspiration: \n<!--more-->\n[www.are.na/share/aRC...](https://www.are.na/share/aRCNPLv)\n\nSome favorites:\n\n\n<img src=\"https://cdn.uploads.micro.blog/91876/2023/7d33ade16f.jpg\" width=\"600\" height=\"478\" alt=\"\"><img src=\"https://cdn.uploads.micro.blog/91876/2023/54407a3df1.jpg\" width=\"600\" height=\"400\" alt=\"\"><img src=\"https://cdn.uploads.micro.blog/91876/2023/3e24c58794.jpg\" width=\"600\" height=\"400\" alt=\"\"><img src=\"https://cdn.uploads.micro.blog/91876/2023/544c46ed9e.jpg\" width=\"600\" height=\"399\" alt=\"\">\n",
 				"date_published": "2023-02-10T16:24:12-04:00",
 				"url": "https://blog.zmh.org/2023/02/10/just-discovered-poolsuitefms.html"
 			},
