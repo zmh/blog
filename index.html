@@ -24,6 +24,68 @@
 	
 	  <div class="h-entry">
 		
+			<h1><a href="https://blog.zmh.org/2024/08/04/installing-commaai-on.html">Installing Comma.ai on a 2018 Mazda CX-5</a></h1>
+		
+
+		<a href="https://blog.zmh.org/2024/08/04/installing-commaai-on.html" class="u-url"><time class="dt-published" datetime="2024-08-04 22:31:02 -0400">Aug 4, 2024</time></a>
+
+		<div class="e-content">
+			 <p>I recently ordered a <a href="https://comma.ai/">Comma.ai</a> kit to add semi-autonomous driving capabilities to my 2018 Mazda CX-5. It took some trial and error (and help from the <a href="https://discord.com/invite/FEzeve2NX2">Comma.ai community on Discord</a>) to get it working properly, but I <em>highly</em> recommend it as I’ll explain later.</p>
+<p>I&rsquo;m sharing the steps I took in case it&rsquo;s helpful for others looking to install the Comma 3X on the same or a similar vehicle. It&rsquo;s a pretty intuitive process, all things considered, but there weren’t a lot of guides with photos on how to do the actual installation process.</p>
+<!-- raw HTML omitted -->
+<h2 id="a-false-start">A false start</h2>
+<p>When I initially received the Comma 3X kit and installed it (follow the <a href="https://www.youtube.com/watch?v=FV7_Su4xbzs">installation video</a> and <a href="https://medium.com/@to.jafar/how-to-setup-openpilot-on-mazda-3eb54c62fdc5">Jafar&rsquo;s post</a>, it&rsquo;s pretty simple) I thought I’d be up and running quickly. However, the device seemed stuck in dashcam mode and didn&rsquo;t move the steering wheel at all. After digging into the Discord server and reading more, it appeared to be an issue with fingerprinting my specific Mazda model.</p>
+<p>I reset the device and installed a <a href="https://smiskol.com/fork/jafaral/mazda-0.9.6">special fork</a> I found on the Discord server which had more Mazda car fingerprints to help identify how to interface with the car. This worked on a test drive, but the car would beep aggressively every 5 seconds if you weren&rsquo;t holding the wheel very deliberately, making highway driving difficult. Even without Comma installed the car would complain when you had cruise control enabled and weren’t holding the steering wheel in the right place, but adding the Comma made it complain much more.</p>
+<p>The Discord community <a href="https://discord.com/channels/469524606043160576/533836721541087242/628249300555792394">recommends</a> trying a wheel cover with weights underneath, which worked somewhat but was quite bulky. Ultimately, I decided to pursue the ultimate solution I had been trying to avoid: swapping out the EPS motor.</p>
+<h2 id="swapping-the-eps-motor">Swapping the EPS motor</h2>
+<p>The EPS motor on pre-2022 Mazdas is designed for very lightweight lane departure vibrations. I always thought it felt a bit underpowered, and you could feel the car lightly bouncing between the lane markers. On any serious turn, the car would just continue to depart the lane.</p>
+<p>Newer Mazda EPS motors can apply more torque to the wheel, allowing for real LKAS (lane keep assistance) that can turn the car even through 10+ degree curves. I was initially hesitant to replace the EPS motor because I wasn&rsquo;t sure exactly where it was located. But after reading the <a href="https://discord.com/channels/469524606043160576/533836721541087242/1250213678108905574">pinned messages</a> on Discord and asking a few questions, the community reassured me it was pretty straightforward.</p>
+<p>The process ended up being easier than I anticipated, although there were a few tricky parts. Here&rsquo;s a detailed breakdown of how it works:</p>
+<ol>
+<li>Order the new EPS motor from eBay — the LKQ store has several options, but you have to make sure the vehicle is model year 2022 or higher. As an example, <a href="https://www.ebay.com/sch/i.html?_dkr=1&amp;iconV2Request=true&amp;_blrs=recall_filtering&amp;_ssn=lkqonline&amp;store_cat=0&amp;store_name=lkqonline&amp;_oac=1&amp;_nkw=2023%20mazda%20cx-5%20power%20steering%20pump%20oem">here&rsquo;s a search</a> on LKQ&rsquo;s eBay store, or just look for &ldquo;2023 Mazda CX-5 Power Steering Pump OEM&rdquo;. You’ll also need a 10mm and 12mm wrench for later.</li>
+<li>You&rsquo;ll receive a hunk of metal similar to this. The only part needed is the circular gearbox-looking piece on the left of this picture.</li>
+</ol>
+<p><img src="https://blog.zmh.org/uploads/2024/img-8387.jpg" alt=""></p>
+<ol start="3">
+<li>Remove the two bolts pictured here, which will detach the shaft from the EPS motor. Use a 12mm wrench for these and be careful not to lose the small plastic gear in the center of the motor once you remove it.</li>
+</ol>
+<p><img src="https://blog.zmh.org/uploads/2024/cleanshot-2024-08-04-at-21.31.512x.png" alt=""></p>
+<ol start="4">
+<li><a href="https://www.youtube.com/watch?v=KWTWZWl6Lgc">Disconnect your car battery</a> using a 10mm wrench to prevent the airbags from firing.</li>
+<li>While not required, I recommend removing the cover to the left of the steering wheel. It pops out easily and improves access to the EPS motor.</li>
+</ol>
+<p><img src="https://blog.zmh.org/uploads/2024/img-8393.jpg" alt=""></p>
+<ol start="6">
+<li>Now that you’re in, you’ll see the same motor mounted, as pictured here:</li>
+</ol>
+<p><img src="https://blog.zmh.org/uploads/2024/img-8395.jpg" alt=""></p>
+<ol start="7">
+<li>Here&rsquo;s the trickiest part: you need to remove the same two bolts on the old gearbox, but one bolt is close to a piece of metal, making it hard to fit the wrench in. It&rsquo;s doable but will take a few attempts. Both bolts are on quite tight, so don&rsquo;t be afraid to use some force to loosen them.</li>
+</ol>
+<p><img src="https://blog.zmh.org/uploads/2024/img-8398.jpg" alt=""><img src="https://blog.zmh.org/uploads/2024/img-8399.jpg" alt=""></p>
+<ol start="8">
+<li>Once the bolts are out, unhook the 3 cables at the top and detach the old motor.</li>
+</ol>
+<p><img src="https://blog.zmh.org/uploads/2024/img-8401.jpg" alt=""></p>
+<ol start="9">
+<li>One tip: the small gear kept falling out or misaligning as I tried to install the new motor. Rather than fumbling with alignment, I positioned the gear on the other (already mounted) side so it was already lined up correctly. You’ll see what I mean.</li>
+</ol>
+<p><img src="https://blog.zmh.org/uploads/2024/img-8409.jpg" alt=""></p>
+<ol start="10">
+<li>Screw the bolts back in, reconnect your battery, and you&rsquo;re all set! You&rsquo;ll want to install <a href="https://smiskol.com/fork/jafaral/mazda-eps22-swap">this modified fork</a> on the Comma 3X, which tells older Mazdas to use the new EPS motor.</li>
+</ol>
+<h2 id="review">Review</h2>
+<p>After installing the new EPS motor, I&rsquo;ve been <em>really</em> impressed with its performance. I wouldn&rsquo;t even bother installing Comma.ai on an older Mazda without it — the experience is just too annoying otherwise.</p>
+<p>The upgraded EPS motor enables stop-and-go adaptive cruise control, which by itself is a fantastic improvement for city traffic. It also provides LKAS that keeps the car smoothly centered in the lane without any warnings to keep your hands on the wheel. These enhancements make long drives much more pleasant.</p>
+<p>With the new motor, I&rsquo;ve completed a few hundred-mile road trips with only three or four interventions to assist with turning, and just a handful of additional interventions in busy city traffic. It really is quite capable.</p>
+<p>Since I had Comma installed before the EPS motor upgrade, I spent some time observing the Openpilot lane markings as we drove. There was never a point where the green outline indicating the car&rsquo;s projected path was misdirected or where the detected lane markers deviated from reality. I also drove at night and in the rain, with no issues whatsoever. This gave me a lot of confidence in the system&rsquo;s capabilities.</p>
+<p>Special thanks to the Comma team for building an incredible hardware product, and to all the maintainers of <a href="https://github.com/commaai/openpilot">Openpilot</a> and volunteers in the <a href="https://discord.com/invite/FEzeve2NX2">#Mazda Discord channel</a>.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
 
 		<a href="https://blog.zmh.org/2024/07/22/221606.html" class="u-url"><time class="dt-published" datetime="2024-07-22 22:16:06 -0400">Jul 22, 2024</time></a>
 
@@ -131,27 +193,27 @@
 		<div class="e-content">
 			 <p>As a birthday present, I purchased and migrated to a new personal domain name. To mark the occasion, I put together a gallery from archive.org of my personal site throughout the years, from <a href="https://zacharyhamed.com">zacharyhamed.com</a> to <a href="https://zhamed.com">zhamed.com</a> to <a href="https://zmh.org">zmh.org</a>.</p>
 <p><a href="https://web.archive.org/web/20010719112144/http://www.zacharyhamed.com/">July 2001</a></p>
-<p><img src="https://blog.zmh.org/uploads/2024/cleanshot-2023-03-01-at-21.34.082x.png" alt=""></p>
+<p><img src="https://cdn.uploads.micro.blog/91876/2024/cleanshot-2023-03-01-at-21.34.082x.png" alt=""></p>
 <p><a href="https://web.archive.org/web/20040406204434/http://zacharyhamed.com/">June 2004</a></p>
-<p><img src="https://blog.zmh.org/uploads/2024/cleanshot-2023-03-01-at-21.34.532x.png" alt=""></p>
+<p><img src="https://cdn.uploads.micro.blog/91876/2024/cleanshot-2023-03-01-at-21.34.532x.png" alt=""></p>
 <p><a href="https://web.archive.org/web/20040925174650/http://zacharyhamed.com/">September 2004</a></p>
-<p><img src="https://blog.zmh.org/uploads/2024/cleanshot-2023-03-01-at-21.35.392x.png" alt=""></p>
+<p><img src="https://cdn.uploads.micro.blog/91876/2024/cleanshot-2023-03-01-at-21.35.392x.png" alt=""></p>
 <p><a href="https://web.archive.org/web/20120209092104/http://zhamed.com/">February 2012</a></p>
-<p><img src="https://blog.zmh.org/uploads/2024/cleanshot-2023-03-01-at-21.37.452x.png" alt=""></p>
+<p><img src="https://cdn.uploads.micro.blog/91876/2024/cleanshot-2023-03-01-at-21.37.452x.png" alt=""></p>
 <p><a href="https://web.archive.org/web/20120421030016/http://zhamed.com:80/">April 2012</a></p>
-<p><img src="https://blog.zmh.org/uploads/2024/cleanshot-2023-03-01-at-21.38.082x.png" alt=""></p>
+<p><img src="https://cdn.uploads.micro.blog/91876/2024/cleanshot-2023-03-01-at-21.38.082x.png" alt=""></p>
 <p><a href="https://web.archive.org/web/20130517220641/http://zhamed.com/">May 2013</a></p>
 <!-- raw HTML omitted -->
 <p><a href="https://web.archive.org/web/20141019054322/http://zhamed.com/">October 2014</a></p>
-<p><img src="https://blog.zmh.org/uploads/2024/cleanshot-2023-03-01-at-21.39.542x.png" alt=""></p>
-<p><img src="https://blog.zmh.org/uploads/2024/cleanshot-2023-03-01-at-21.40.172x.png" alt=""></p>
+<p><img src="https://cdn.uploads.micro.blog/91876/2024/cleanshot-2023-03-01-at-21.39.542x.png" alt=""></p>
+<p><img src="https://cdn.uploads.micro.blog/91876/2024/cleanshot-2023-03-01-at-21.40.172x.png" alt=""></p>
 <p><a href="https://web.archive.org/web/20150906000052/http://zhamed.com:80/">September 2015</a></p>
 <p><img src="__uploaded__images__/DraggedImage-1.tiff" alt=""></p>
-<p><img src="https://blog.zmh.org/uploads/2024/cleanshot-2023-03-01-at-21.41.542x.png" alt=""></p>
-<p><img src="https://blog.zmh.org/uploads/2024/cleanshot-2023-03-01-at-21.42.042x.png" alt=""></p>
+<p><img src="https://cdn.uploads.micro.blog/91876/2024/cleanshot-2023-03-01-at-21.41.542x.png" alt=""></p>
+<p><img src="https://cdn.uploads.micro.blog/91876/2024/cleanshot-2023-03-01-at-21.42.042x.png" alt=""></p>
 <p>Today</p>
-<p><img src="https://blog.zmh.org/uploads/2024/cleanshot-2023-03-01-at-21.43.282x.png" alt=""></p>
-<p><img src="https://blog.zmh.org/uploads/2024/cleanshot-2023-03-01-at-21.43.462x.png" alt=""></p>
+<p><img src="https://cdn.uploads.micro.blog/91876/2024/cleanshot-2023-03-01-at-21.43.282x.png" alt=""></p>
+<p><img src="https://cdn.uploads.micro.blog/91876/2024/cleanshot-2023-03-01-at-21.43.462x.png" alt=""></p>
 <p>I’m particularly excited to be moving to a <code>.org</code> domain. When I thought about it more deeply, I realized many of the sites I admire on the internet are .org’s. A few favorites:</p>
 <ul>
 <li><a href="https://kk.org">kk.org</a></li>
